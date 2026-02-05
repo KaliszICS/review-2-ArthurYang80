@@ -115,28 +115,28 @@ public class PracticeProblemTest {
    public void testQ4_1()
    {
       InputStream originalIn = System.in;
-      String data = "5\n";
+      String data = "5.0\n";
       System.setIn(new ByteArrayInputStream(data.getBytes()));
 
       // action
       PracticeProblem.q4();
 
       // assertion
-      assertEquals("In: 25\n", bos.toString());
+      assertEquals("In: 1.8\n", bos.toString());
    }
 
    @Test
    public void testQ4_2()
    {
       InputStream originalIn = System.in;
-      String data = "0\n";
+      String data = "0.0\n";
       System.setIn(new ByteArrayInputStream(data.getBytes()));
 
       // action
       PracticeProblem.q4();
 
       // assertion
-      assertEquals("In: 0\n", bos.toString());
+      assertEquals("In: -3.2\n", bos.toString());
    }
 
    @Test
